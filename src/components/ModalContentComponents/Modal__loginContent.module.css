@@ -1,0 +1,62 @@
+.login__textMain{
+    color: aliceblue;
+  }
+  
+  .login__inputBoxes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .login__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    width: 86%;
+  }
+  
+  .login__box__texts{
+    width: 82%;
+  }
+  
+  .login__box__text{
+    color: aliceblue;
+    margin-bottom: 4px;
+  }
+  
+  .login__box__input{
+    width: 80%;
+    height: 30px;
+  }
+  
+  .login__box__forgotPasswordText{
+    color: lightskyblue;
+    cursor: pointer;
+  }
+  
+  .login__box__forgotPasswordText:hover{
+    opacity: 80%;
+  }
+  
+  .login__buttonEnter{
+    background-color: #4469ed;
+    font-size: 20px;
+    color: aliceblue;
+    width: 127px;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 14px;
+    border: transparent;
+    transition: 0.2s;
+  }
+  
+  .login__buttonEnter:active{
+    opacity: 80%;
+  }
+  
+  .login__buttonEnter:hover{
+    color: #ffd364;
+  }

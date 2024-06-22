@@ -1,0 +1,72 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.modalActive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    pointer-events: all;
+    opacity: 1;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1000;
+    transition: 0.3s;   
+}
+
+.modal__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+    background-color: #535353;
+    padding: 40px 30px;
+    gap: 43px;
+    position: relative;
+    transform: scale(0.5);
+    transition: 0.3s;
+}
+
+.modal__contentActive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+    background-color: #535353;
+    position: relative;
+    transform: scale(1);
+    padding: 40px 30px;
+    gap: 43px;
+    transition: 0.3s;
+}
+
+.modal__buttonClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    color: aliceblue;
+    background-color: transparent; 
+    border-radius: 100px;  
+    border: 0px solid;
+    text-align: center;
+    cursor: pointer;
+}

@@ -1,32 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Modal from './components/Modal'
+import Modal__loginContent from './components/ModalContentComponents/Modal__loginContent'
+import Header from './components/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isModalActive, setModalActive] = useState(false)
 
   return (
     <>
-      <header className="header">
-        <div className="wrapper">
-          <div className="header__box-left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/2560px-Binance_logo.svg.png" alt="Binance" className="main-icon" />
-            <div className="header__menu-left">
-              <p href="" className="menu-left__text">Futures</p>
-              <p href="" className="menu-left__text">Options</p>
-              <p href="" className="menu-left__text">Trading Bots</p>
-              <p href="" className="menu-left__text">Data</p>
-              <p href="" className="menu-left__text">More</p>
-            </div>
-          </div>
-          <div className="header__box-right">
-            <a href="" className="menu-right__link">
-              <img src="https://t4.ftcdn.net/jpg/05/89/93/27/360_F_589932782_vQAEAZhHnq1QCGu5ikwrYaQD0Mmurm0N.webp" alt="profile" className="menu-right__img" />
-            </a>
-          </div>
-        </div>
-      </header>
+      <Modal active={isModalActive} setActive={setModalActive}>
+        <Modal__loginContent />
+      </Modal>
+      <Header isModalActive={isModalActive} setModalActive={setModalActive}/>
       <main className="main">
         <section className="cover">
           <div className="cover__slider">

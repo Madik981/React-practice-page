@@ -15,55 +15,6 @@
   width: 83vw;
 }
 
-.header{
-  padding: 10px 20px;
-  position: fixed;
-  z-index: 100000;
-  background-color: #424242;
-  width: 100%;
-}
-
-.header__box-left{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-}
-
-.main-icon{
-  margin-left: 15px;
-  width: auto;
-  height: 35px;
-}
-
-.header__menu-left{
-  display: flex;
-  gap: 37px;
-}
-
-.menu-left__text{
-  color: aliceblue;
-  font-size: 22px;
-  font-family: "Noto Sans", sans-serif;
-}
-
-.header__box-right{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
-}
-
-.menu-right__link{
-  display: flex;
-  align-items: center;
-}
-
-.menu-right__img{
-  height: 40px;
-  width: 40px;
-}
-
 .cover{
   display: flex;
   justify-content: center;
@@ -72,5 +23,3 @@
   width: 100%;
 }
 
-.cover__slider__img{
-}
